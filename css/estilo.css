@@ -1,0 +1,295 @@
+/* Seletores de Tipo */
+
+input {
+    margin: 5px;
+    padding: 1.5px;
+}
+
+
+table {
+    border-radius: 10px;
+    border-color: rgb(184, 131, 235);
+}
+
+
+header {
+    width: 328px;
+}
+
+h3 {
+    margin: 2%;
+}
+
+body {
+    background-color: rgb(173, 102, 240);
+
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    margin: 2%;
+    border-radius: 20px;
+    margin-top: 7%;
+    
+}
+
+footer {
+    margin: 1%;
+    padding: 1%;
+    text-align: right;
+    font-size: 13pt;
+    color: rgb(80, 2, 2);
+    font-style: italic;
+    
+}
+
+
+
+/* Seletores de ID */
+
+#linksinicio {
+    font-size: 16pt;
+    font-style: italic;
+    margin: -1%;
+    padding: 1.5%;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+#buttonlogin {
+    width: 100%;
+}
+
+
+#buttontabela {
+    padding: 5px;
+}
+
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#containerpaginainicio {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+#container2 {
+    display: flex;
+    width: calc(50% - 40px);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 30px 30px;
+    background-color: rgb(229, 183, 235);
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+#img {
+
+    width: 100px;
+    height: 150px;
+    margin-top: 3%;
+    margin-right: 2%;
+    margin-left: 1%;
+    margin-bottom: 3%;
+}
+
+#sinopse {
+    margin-top: 8%;
+    margin-bottom: 4%;
+    margin-left: 1%;
+
+}
+
+
+
+
+
+/* Seletores de Atributo */
+
+input[type="email"] {
+    border-radius: 3px;
+    border-color: rgb(165, 130, 247);
+}
+
+input[type="password"] {
+    border-radius: 3px;
+    border-color: rgb(165, 130, 247);
+}
+
+
+
+/* Seletores de Filho */
+
+#linksinicio a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+
+}
+
+#linksinicio #login {
+
+    float: right;
+    margin-top: -1.3%;
+
+}
+
+
+
+
+/* Seletores de Classe */
+
+.inicio {
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20pt;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    ;
+
+}
+
+.inicio2 {
+    color: rgb(56, 4, 4);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20pt;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+/* Seletores de Pseudo-Classe */
+
+#buttonlogin:hover {
+    background-color: rgb(49, 41, 56);
+    border-color: rgb(44, 18, 78);
+    translate: 0.5px 0.5px;
+    box-shadow: 3px 3px 3px 3px rgb(57, 2, 65);
+}
+
+#buttonlogin:active {
+    background-color: rgb(36, 10, 63);
+    border-color: rgb(13, 1, 29);
+
+}
+
+
+input:hover {
+    border-color: rgb(44, 18, 78);
+    background-color: antiquewhite;
+    translate: 0.5px 0.5px;
+    box-shadow: 3px 3px 3px 3px rgb(57, 2, 65);
+}
+
+
+input:active {
+    border-color: rgb(13, 1, 29);
+    background-color: rgb(36, 10, 63);
+}
+
+
+#linksinicio a:hover {
+    background-color: rgb(76, 68, 83);
+    border-color: rgb(44, 18, 78);
+    text-decoration: underline;
+}
+
+
+#linksinicio a:active {
+    background-color: rgb(36, 10, 63);
+    border-color: rgb(13, 1, 29);
+
+}
+
+#container2:hover {
+    translate: 3px 3px;
+    box-shadow: 3px 3px 3px 3px rgb(57, 2, 65);
+}
+
+table:hover {
+    box-shadow: 3px 3px 3px 3px rgb(57, 2, 65);
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+    #container2 {
+        width: 100%;
+        margin: 3%;
+    }
+
+    body {
+        width: 102%;
+        margin: -1%;
+    }
+
+    header {
+        width: 99%;
+    }
+
+    #linksinicio a {
+        padding: 15px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 535px) {
+    #linksinicio a {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 3px;
+        margin: 1px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        text-align: center;
+        margin-top: 2px;
+    }
+
+    #linksinicio #login {
+        float: none;
+        border-bottom: 0px;
+        margin-top: 2px;
+    }
+  
+}
+
+
+@media screen and (min-width: 1001px) {
+    body {
+        width: 100%;
+    }
+
+    #linksinicio {
+        width: 100%;
+        padding: 0.2%;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+}
